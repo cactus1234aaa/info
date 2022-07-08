@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>a website</title>
+</head>
+<body onload="startTime()">
+   <h1>hello</h1>
+   <h2>i'm Cactus!</h2>
+   <h2 id="txt"></h2>
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i}; 
+  return i;
+}
+function myFunction() {
+  window.open("https://cactus1234aaa.github.io/")
+}
+</script>
+   <h2>languages i code</h2>
+   <ul>
+    <li>html</li>
+    <li>css</li>
+    <li>javascript</li>
+   </ul>
+   <h2>my names on different things</h2>
+   <ul>
+    <li>github: cactus1234aaa</li>
+    <li>discord: cactus🥔#7094</li>
+    <li>bloons tower defense 6: kid1234aaa</li>
+   </ul>
+   <h2 onclick="myFunction()">click me to get sent to my school tools page!</h2>
+   <style>
+   body {
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW1WyGcz8T49vlfA0lU4i7Q5XZnMbuazpVFg&usqp=CAU");
+    background-repeat: no-repeat;
+         background-size: cover;
+      }
+
+      h1 {
+        color: #008bdd;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           text-shadow: 0 0 50px #23EBC3, 0 0 50px #23EBC3, 0 0 50px #23EBC3, 0 0 50px #23EBC3;
+            animation: mymove 1s infinite;
+      }
+
+      h2 {
+         color: crimson;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      li {
+         color: #008bdd;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+        @keyframes mymove {
+  50% {text-shadow: 0 0 50px crimson, 0 0 50px crimson, 0 0 50px crimson, 0 0 50px crimson, 0 0 50px crimson, 0 0 50px crimson;}
+}
+   </style>
+</body>
+</html>
